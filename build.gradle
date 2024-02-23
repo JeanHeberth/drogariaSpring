@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.3'
     id 'io.spring.dependency-management' version '1.1.4'
+    id 'io.freefair.lombok' version'6.6.3'
 }
 
 group = 'br.com.drogaria'
@@ -23,7 +24,8 @@ dependencies {
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    compileOnly 'org.projectlombok:lombok:1.18.30'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor('org.projectlombok:lombok')
 
 
 
