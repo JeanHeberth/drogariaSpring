@@ -5,17 +5,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
-@AllArgsConstructor
-@NoArgsConstructor
+import java.time.LocalDate;
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Produto {
 
-    private Long codigo;
+    private Short codigo;
     private String nome;
     private Byte quantidade;
     private BigDecimal preco;
-    private LocalDateTime dataDeValidade;
+    private LocalDate dataDeValidade;
 
 
 
