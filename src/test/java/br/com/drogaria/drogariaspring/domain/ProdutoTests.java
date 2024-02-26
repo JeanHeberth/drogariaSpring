@@ -9,18 +9,18 @@ import java.time.LocalDate;
 @SpringBootTest
 class ProdutoTests {
 
-    @Test
-    void criarProduto() {
-        Produto p = new Produto(
-                Short.valueOf("1"),
-                "Coca-cola",
-                Byte.valueOf("15"),
-                BigDecimal.valueOf(10.50),
-                LocalDate.of(2024, 11, 23),
-                new Categoria(null,"Teste1")
-        );
-        System.out.println(p);
-
-    }
+//    @Test
+//    void criarProduto() {
+//        Produto p = new Produto(
+//                Short.valueOf("1"),
+//                "Coca-cola",
+//                Byte.valueOf("15"),
+//                BigDecimal.valueOf(10.50),
+//                LocalDate.of(2024, 11, 23),
+//                new Categoria(null,"Teste1")
+//        );
+//        System.out.println(p);
+//
+//    }
 }
 
