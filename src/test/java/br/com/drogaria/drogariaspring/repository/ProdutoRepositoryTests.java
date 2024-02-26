@@ -1,6 +1,7 @@
 package br.com.drogaria.drogariaspring.repository;
 
 
+import br.com.drogaria.drogariaspring.domain.Categoria;
 import br.com.drogaria.drogariaspring.domain.Produto;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,8 @@ class ProdutoRepositoryTests {
                 "Coca-cola",
                 Byte.valueOf("15"),
                 BigDecimal.valueOf(10.50),
-                LocalDate.of(2024, 11, 23)
+                LocalDate.of(2024, 11, 23),
+                new Categoria(Byte.valueOf("1"),"Teste1")
         );
 
         Produto p2 = new Produto(
@@ -30,7 +32,9 @@ class ProdutoRepositoryTests {
                 "Heineken",
                 Byte.valueOf("08"),
                 BigDecimal.valueOf(6.50),
-                LocalDate.of(2024, 03, 27)
+                LocalDate.of(2024, 03, 27),
+                new Categoria(Byte.valueOf("2"),"Teste2")
+
         );
         produtoRepository.save(p1);
         produtoRepository.save(p2);

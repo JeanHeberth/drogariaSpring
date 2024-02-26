@@ -30,5 +30,9 @@ public class Produto {
     @Column
     private LocalDate dataDeValidade;
 
+    @ManyToOne
+    @JoinColumn(nullable = true)
+    private Categoria categoria;
+
 
 }
